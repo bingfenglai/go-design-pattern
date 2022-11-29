@@ -13,9 +13,9 @@ func TestFactoryDp(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	if val, err := option.Option(1, 2);err==nil{
-		println("计算结果：",val)
-	}else {
+	if val, err := option.Option(1, 2); err == nil {
+		println("计算结果：", val)
+	} else {
 		println(err.Error())
 	}
 
