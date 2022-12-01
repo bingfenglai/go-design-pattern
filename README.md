@@ -13,3 +13,9 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 代理模式
 
+## 工厂方法模式
+
+## 模板方法模式
+
+
+
