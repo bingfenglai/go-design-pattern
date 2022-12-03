@@ -2,11 +2,11 @@ package builder_dp
 
 import "errors"
 
-type buildError struct {
+type buildErrorWrapper struct {
 	error
 }
 
-func (buildError *buildError) newError(msg string) *buildError {
+func (buildError *buildErrorWrapper) newError(msg string) *buildErrorWrapper {
 	if buildError.error == nil {
 		buildError.error = errors.New(msg)
 	} else {
@@ -17,7 +17,7 @@ func (buildError *buildError) newError(msg string) *buildError {
 	return buildError
 }
 
-func (buildError *buildError) Error() string {
+func (buildError *buildErrorWrapper) Error() string {
 	if buildError.error == nil {
 		return ""
 	}

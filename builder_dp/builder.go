@@ -44,8 +44,8 @@ type DeliveryFee struct {
 }
 
 type ProductBuilder struct {
-	Product *Product
-	*buildError
+	*Product
+	*buildErrorWrapper
 }
 
 func CreateProductBuilder() *ProductBuilder {
@@ -53,10 +53,10 @@ func CreateProductBuilder() *ProductBuilder {
 }
 
 func (receiver *ProductBuilder) newError(msg string) {
-	if receiver.buildError == nil {
-		receiver.buildError = &buildError{}
+	if receiver.buildErrorWrapper == nil {
+		receiver.buildErrorWrapper = &buildErrorWrapper{}
 	}
-	receiver.buildError.newError(msg)
+	receiver.buildErrorWrapper.newError(msg)
 }
 
 func (receiver *ProductBuilder) SetProductTitle(title string) *ProductBuilder {
