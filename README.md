@@ -21,5 +21,9 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 建造者模式
 
+## 观察者模式
+
+
+
 
 
