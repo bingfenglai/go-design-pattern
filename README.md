@@ -25,5 +25,7 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 抽象工厂模式
 
+## 状态模式
+
 
 
