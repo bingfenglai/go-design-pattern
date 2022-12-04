@@ -23,7 +23,7 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 观察者模式
 
-
+## 抽象工厂模式
 
 
 
