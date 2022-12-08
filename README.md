@@ -39,5 +39,7 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 适配器模式
 
+## 组合模式
+
 
 
