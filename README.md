@@ -33,6 +33,9 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 单例模式
 
+## 桥接模式
+
+## 命令模式
 
 
 
