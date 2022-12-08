@@ -41,5 +41,7 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 组合模式
 
+## 职责链模式
+
 
 
