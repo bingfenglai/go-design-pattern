@@ -31,5 +31,8 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 备忘录模式
 
+## 单例模式
+
+
 
 
