@@ -43,5 +43,7 @@ This  repository is a demo about design pattern content written for golang.
 
 ## 职责链模式
 
+## 中介者模式
+
 
 
