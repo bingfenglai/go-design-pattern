@@ -32,7 +32,12 @@ func (receiver *Programmer) Accept(visitor Visitor) {
 
 func NewProgrammer(name string) *Programmer {
 	codeLine := rand.Intn(10000)
-	kpi := codeLine / 100
+	kpi := codeLine/100 + 10
+	if kpi > 100 {
+		kpi = 100
+	} else if kpi < 60 {
+		kpi = 60
+	}
 	return &Programmer{name: name, kpi: kpi, codeLine: codeLine}
 }
 
@@ -60,6 +65,9 @@ func (receiver *Manager) Accept(visitor Visitor) {
 
 func NewManager(name string) *Manager {
 	product := rand.Intn(10)
-	kpi := product * 10
+	kpi := product*10 + 20
+	if kpi > 100 {
+		kpi = 100
+	}
 	return &Manager{name: name, kpi: kpi, product: product}
 }
