@@ -1,4 +1,4 @@
-package visitor
+package visitor_dp
 
 type Report struct {
 	employees []Employee
