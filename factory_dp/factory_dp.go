@@ -2,18 +2,14 @@ package factory_dp
 
 import "errors"
 
-type OptionFactory interface {
-	CreateOption(name string) (Option, error)
+type OptionFactory struct {
 }
 
-type OptionFactoryImpl struct {
+func GetFactoryInstance() *OptionFactory {
+	return &OptionFactory{}
 }
 
-func GetFactoryInstance() OptionFactory {
-	return &OptionFactoryImpl{}
-}
-
-func (receiver *OptionFactoryImpl) CreateOption(name string) (Option, error) {
+func (receiver *OptionFactory) CreateOption(name string) (Option, error) {
 
 	switch name {
 	case "+":

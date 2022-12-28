@@ -9,7 +9,7 @@ func TestFactoryDp(t *testing.T) {
 
 	optionFactory := factory_dp.GetFactoryInstance()
 
-	option, err := optionFactory.CreateOption("?")
+	option, err := optionFactory.CreateOption("+")
 	if err != nil {
 		t.Error(err)
 	}
